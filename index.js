@@ -1,8 +1,6 @@
-const WebSocket = require("ws");
-const ws = new WebSocket.Server({port: 3000});
-
-ws.on("connection", (ws) => {
-    console.log("I'm server")
-    let msg = "Connection Established!. M2C!";
-    ws.send(JSON.stringify(msg));
-});
+var http = require('http');
+http.createServer(function (req, res) {
+    console.log(`Just got a request at ${req.url}!`)
+    res.write('Yo!');
+    res.end();
+}).listen(process.env.PORT || 3000);
