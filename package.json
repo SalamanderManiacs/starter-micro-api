@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "ws" : "https://github.com/websockets/ws/archive/refs/tags/8.13.0.tar.gz"
+    "ws" : "websockets/ws"
   }
 }
